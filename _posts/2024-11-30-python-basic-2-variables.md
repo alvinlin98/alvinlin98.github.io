@@ -237,5 +237,3 @@ num = 10
     (C) exec(num)
 
     (D) help(num)
-
-https://www.tutorialsteacher.com/question-answer/python/variable

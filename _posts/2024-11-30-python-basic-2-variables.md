@@ -152,9 +152,7 @@ del 變數名稱
 3. 英文字母大小寫視為不同變數名稱。
 4. 不能與 Python 系統保留字（也叫關鍵字）相同，如下表所示。
     
-    
     | and | as | assert | break | class | continue |
-    | --- | --- | --- | --- | --- | --- |
     | def | del | elif | else | except | finally |
     | for | from | False | global | if | import |
     | in | is | lambda | nonlocal | not | None |

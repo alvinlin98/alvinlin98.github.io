@@ -110,7 +110,7 @@ author:
   name             : "Owen爸"
   avatar           : "/assets/images/Alvin_bio.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : # "~ 腦袋記不住的事，就把它記錄下來吧。 ~"
-  location         : "新北市, 板橋區"
+  location         : "銀河系, 地球"
   # email            : "alvinlin.dsa@gmail.com"
   links:
     - label: "Email"

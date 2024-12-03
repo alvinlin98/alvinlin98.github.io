@@ -127,11 +127,8 @@ toc: true
     
     | 命令 | 說明 | 範例 |
     | --- | --- | --- |
-    | `git diff` | 比較檔案差異
-    `git diff` [比較工作區與暫存區] | 
-    > git diff 662752f |
-    | `git reset`  | 撤銷修改，有三個模式：soft、mixed、hard，分別對應不同的撤銷程度。 | 還原到指定的還原點，其結果是不可逆的
-    > git reset —hard 662752f |
+    | `git diff` | 比較檔案差異 `git diff` [比較工作區與暫存區] | > git diff 662752f |
+    | `git reset`  | 撤銷修改，有三個模式：soft、mixed、hard，分別對應不同的撤銷程度。 | 還原到指定的還原點，其結果是不可逆的 <br> > git reset —hard 662752f |
 
 ## Git 的 .gitignore 檔案簡介
 
@@ -260,7 +257,8 @@ toc: true
 
 當了解上述的 Git 介紹後，已經知道 Git 是如何做版本管理，接下來參考這支影片的介紹，讓我們清楚知道如何在 VS Code 中使用 Git 與 GitHub 來做版本控管。
 
-[https://www.youtube.com/watch?v=FKXRiAiQFiY](https://www.youtube.com/watch?v=FKXRiAiQFiY)
+{% include video id="FKXRiAiQFiY" provider="youtube" %}
+
 
 # 作業系統其它常用指令
 

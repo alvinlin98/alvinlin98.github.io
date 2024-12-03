@@ -27,9 +27,9 @@ python_basic:
   - title: 3. 資料型別(Data Type) 
     children:
       - title: "3.1 數值"
-        url: /python_basic/3-1-number/
+        url: /python_basic/3-1-datatype-number/
       - title: "3.2 字串"
-        url: /python_basic/3-2-string/
+        url: /python_basic/3-2-datatype-string/
 
 raspberry:
   - title: 1. 安裝

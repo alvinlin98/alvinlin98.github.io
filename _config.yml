@@ -282,9 +282,9 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-bigdata_archive:
-  type: liquid
-  path: /bigdata/  
+# bigdata_archive:
+#   type: liquid
+#   path: /bigdata/  
 
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:

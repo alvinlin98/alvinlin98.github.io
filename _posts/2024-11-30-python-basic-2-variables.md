@@ -170,68 +170,8 @@ H M = 1       # 不能有空白
 for = 1       # 不能是系統保留字
 If = 1        # 可以，大寫的 If 不是系統保留字
 ```
+-----
 
-# **隨堂測驗**
+# 隨堂測驗
 
-**Q1. 下列哪一個是定義 Python 的變數？(15分）**
-
-    (A) var name = "Steve”
-
-    (B) string name = "Steve”
-
-    (C) name = "Steve”
-
-    (D) 以上皆是
-
-**Q2. 下列哪一個會出現錯誤？(15分）**
-    (A) x, y, z = 10, 20, 30
-
-    (B) x, y, z = 10, “Hello”, True 
-
-    (C) x = 10, y = “Hello”, z = True
-
-    (D) 以上都不會
-
-Q3. 下列哪些敘述是正確的？**(25分）**
-
-    (A) 變數名不能以數字開頭。
-
-    (B)  Python 中的變數名稱有區分大小寫。
-
-    (C) 變數名不能以下劃線「_」開頭。
-
-    (D) 變數名可以是保留關鍵字。
-
-Q4. 下列哪一個是 Python 的註解符號？**(15分）**
-
-    (A) — 
-
-    (B) // 
-
-    (C) # 
-
-    (D) $ 
-
-Q5. 下列哪一個是錯誤的變數名稱？**(15分）**
-
-    (A) For
-
-    (B) break
-
-    (C) str03
-
-    (D) error_i
-
-Q6. 如何取得下列變數的型別？**(15分）**
-
-```python
-num = 10
-```
-
-    (A) type(num)
-
-    (B) print(num)
-
-    (C) exec(num)
-
-    (D) help(num)
+<iframe data-tally-src="https://tally.so/embed/3XRKK4?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1603" frameborder="0" marginheight="0" marginwidth="0" title="變數-隨堂測驗"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>

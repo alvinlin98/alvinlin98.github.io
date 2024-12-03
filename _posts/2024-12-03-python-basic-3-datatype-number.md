@@ -1,5 +1,5 @@
 ---
-title:  "Datatype-Number"
+title:  "資料型別-數值"
 permalink: /python_basic/3-1-datatype-number/
 excerpt: "Python 的數值型別包括整數 (int)、浮點數 (float)、布林值 (boolean)，支援數學運算與大範圍數值表示，精度靈活。"
 header:

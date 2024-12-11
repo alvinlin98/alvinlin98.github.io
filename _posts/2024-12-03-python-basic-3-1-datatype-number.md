@@ -286,5 +286,4 @@ print(ans)  # 5050
 
 # 隨堂測驗
 
-<iframe data-tally-src="https://tally.so/embed/n0b28P?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1307" frameborder="0" marginheight="0" marginwidth="0" title="數值-隨堂測驗
-"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeISmrwx7hTlrQ9NuE_hY53-izojpueKzd5s7y534XTdqsQRw/viewform?embedded=true" width="640" height="1795" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>

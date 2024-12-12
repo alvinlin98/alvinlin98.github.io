@@ -176,6 +176,7 @@ str3[0] = "A"   # TypeError: 'str' object does not support item assignment
 | str() | 強制轉換數值為字串型別 | a = 3.0 <br> b = "輸入的數值是：" <br> print(b + str(a)) # 輸入的數值是：3.0| 
 | lower() | 傳回原始字串的副本，其中所有字元都轉換為小寫 | a = "PYTHON" <br> print(a.lower()) # python |
 | upper() | 傳回大寫的字串。符號和數字不受影響 | a = "python" <br> print(a.upper()) # PYTHON |
+| count() | 計算指定子字串在目標字串中出現的次數。 | a = "banana" <br> result = a.count("a") <br> print(result)  # 3 |
 | capitalize() | 傳回字串的副本，其中第一個字元大寫，其餘字母小寫。 | a = "python" <br> print(a.capitalize())  # Python |
 | find() | 傳回給定字串中第一次出現的子字串的索引（區分大小寫）。如果未找到子字串，則傳回 -1。 | a = "hello world" <br> print(a.find("world"))  # 6 |
 | index(x) | 傳回給定字串中第一次出現的子字串的索引。 | a = "hello world" <br> print(a.index("o"))  # 4 |
@@ -185,6 +186,90 @@ str3[0] = "A"   # TypeError: 'str' object does not support item assignment
 | strip() | 透過刪除前導字元和尾隨字元來傳回字串的副本。 | a = "  hello  " <br> print(a.strip())  # hello |
 | lstrip() | 透過刪除指定為參數的前導字元來傳回字串的副本。 | print(a.lstrip()) |
 | rstrip() | 透過刪除指定為參數的尾隨字元來傳回字串的副本。 | print(a.rstrip()) |
+
+# 實作練習
+
+## Lab 1：字串型別與轉換
+
+**題目：**
+
+請將以下變數內容結合成一個完整的句子，並將數字轉換為字串後輸出：
+
+```python
+name = "Owen"
+age = 9
+hobby = "coding"
+```
+
+輸出應為：
+Owen is 9 years old and loves coding.
+
+**解答：**
+
+```python
+name = "Owen"
+age = 9
+hobby = "coding"
+
+result = name + " is " + str(age) + " years old and loves " + hobby + "."
+print(result)
+```
+
+## Lab 2：處理跳脫字元與子字串提取
+
+**題目：**
+
+字串 text = "\*\*\*Python\nis\tawesome!\*\*\*"，請完成以下操作：
+
+1. 移除所有的跳脫字元，將其轉換為 "\*\*\*Python is awesome!\*\*\*"。
+2. 不要取`***`，使用字串索引取得，將其轉換為 "Python is awesome!"。。
+3. 提取單字 "awesome" 並輸出。
+
+**解答：**
+
+```python
+text = "***Python\nis\tawesome!***"
+print(text)
+# 移除跳脫字元
+clean_nt = text.replace("\n", " ").replace("\t", " ")
+print(clean_nt)  # Python is awesome!
+
+# 前後3碼不要取
+clean_text = clean_nt[3:-3]
+print(clean_text)
+
+# 提取 "awesome"
+wordlist = clean_text.split()
+print(wordlist)
+word = wordlist[-1]
+print(word)  # awesome
+```
+
+## Lab 3：字串運算與方法應用
+
+**題目：**
+
+1. 給定字串 s = " Learn Python, Python is fun! "，去除前後空白並將所有文字轉為小寫。
+2. 計算字串中 Python 出現的次數。
+3. 將 Python 替換為 coding，並輸出結果。
+
+**解答：**
+
+```python
+s = "  Learn Python, Python is fun!  "
+# 去除前後空白並轉小寫
+s_cleaned = s.strip().lower()
+print(s_cleaned)  # learn python, python is fun!
+
+# 計算 "Python" 的出現次數（不分大小寫）
+count = s_cleaned.count("python")
+print(count)  # 2
+
+# 替換 "Python" 為 "coding"
+s_replaced = s_cleaned.replace("python", "coding")
+print(s_replaced)  # learn coding, coding is fun!
+
+```
 
 ----- 
 

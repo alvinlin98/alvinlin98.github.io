@@ -174,4 +174,4 @@ If = 1        # 可以，大寫的 If 不是系統保留字
 
 # 隨堂測驗
 
-<iframe data-tally-src="https://tally.so/embed/3XRKK4?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="1603" frameborder="0" marginheight="0" marginwidth="0" title="變數-隨堂測驗"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScbwEWUk7Ys8wPZGD7ZAevRONpo6IUB-4QL1GmomutiZ9iEkg/viewform?embedded=true" width="640" height="1960" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>

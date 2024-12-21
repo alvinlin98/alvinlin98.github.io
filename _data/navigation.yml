@@ -30,6 +30,10 @@ python_basic:
         url: /python_basic/3-1-datatype-number/
       - title: "3.2 字串"
         url: /python_basic/3-2-datatype-string/
+      - title: "3.3 輸出與輸入"
+        url: /python_basic/3-3-print-input/
+      - title: "3.4 運算式"
+        url: /python_basic/3-4-operators/
 
 raspberry:
   - title: 1. 安裝

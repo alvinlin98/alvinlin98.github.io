@@ -152,7 +152,16 @@ str3[0] = "A"   # TypeError: 'str' object does not support item assignment
 | `\x` | 以十六進位表示字元 | str1 = "\\x48\\x69" <br> print(str1) |
 | `\o` | 以八進位表示字元 | str1 = "\110\151" <br> print(str1) |
 
+## 字串前加r
 
+如果在字串前加`r`，可以防止**跳脫字元**被轉譯，相當於取消跳脫字元的功能。
+
+```python
+str1 = "Hello,\nPython" 
+print(str1)
+str2 = r"Hello,\nPython" 
+print(str2)
+```
 
 ## 字串運算子(Operator)
 
@@ -166,6 +175,7 @@ str3[0] = "A"   # TypeError: 'str' object does not support item assignment
 | [:] | 傳回由`:`分隔的兩個索引所指定範圍內的字串 | a = 'Python' <br> print(a[2:4])  # th |
 | in | 比較左邊字串是否存在於右邊字串，存在則回傳 `True`，否則 `False` | a = 'Python' <br> print('x' in a)  # False <br> print('y' in a)  # True <br> print('p' in a)  # False |
 | not in | 比較左邊字串是否不存在於右邊字串，不存在則回傳 `True`，否則 `False` | a = 'Python' <br> print('x' not in a)  # True <br> print('y' not in a)  # False |
+
 
 ## 字串函數
 
@@ -186,6 +196,105 @@ str3[0] = "A"   # TypeError: 'str' object does not support item assignment
 | strip() | 透過刪除前導字元和尾隨字元來傳回字串的副本。 | a = "  hello  " <br> print(a.strip())  # hello |
 | lstrip() | 透過刪除指定為參數的前導字元來傳回字串的副本。 | print(a.lstrip()) |
 | rstrip() | 透過刪除指定為參數的尾隨字元來傳回字串的副本。 | print(a.rstrip()) |
+
+## 字元的編碼
+
+無論是數字、英文字母或是中文字元，在 Python 裡都有一個獨一無二的數字去對應它們，這個數字就是它們的「字元碼」。
+要查看字元的字元碼，可以利用 Python 的 `ord()` 函數。 `ord` 是 ordinal 的縮寫，也就是序數的意思，此函數回傳的是十進位的整數。
+
+```python
+print(ord("A"))   # 65
+print(ord("a"))   # 97
+print(ord("林"))  # 26519
+```
+
+### ASCII 編碼
+
+* 範圍: 0–127（7位元）。
+* 特點: 最早的字元編碼之一，僅適用於英文及一些控制字元（如換行、空格）。
+* 用途: 英文和基本符號的表達，廣泛用於早期計算機。
+
+  ASCII 是 使用 7 個位元定義文字，2 的 7 次方等於 128，相當於定義了 128 個字元。在這 128 字元中有 33 個字元是無法顯示的控制字元，其它則是可以顯示的字元，例如：+、-、=、0 到 9、大寫 A 到 Z、小寫 a 到 z 等，可以利用 Python 的 `chr()` 函數，`chr` 是 character 的縮寫，此函數會回傳 ASCII 或 Unicode 的字元。
+
+  ```python
+  print(chr(65))    # A
+  print(chr(97))    # a
+  print(chr(26519)) # 林
+  ```
+
+### Unicode 編碼
+
+* 範圍: 覆蓋幾乎所有已知文字（目前支援超過 143,000 個字元）。
+* 特點: 提供全球文字的統一編碼，字元編碼以數值（碼點）表示（例如 U+0041 表示字母 A）。
+* 用途: 解決不同文字編碼不兼容的問題，成為現代計算的基礎。
+
+  從上面的範例中，你可以看到字元的編碼，Python 的字元是採 「Unicode」來編碼的。在 Unicode 編碼的前 128 個碼是保留給 「ASCII」碼使用，所以原先存在於 ASCII 碼中的英文大小寫、標點符號、...等，是可以正常在 Unicode 碼中使用。
+
+  早期每種語系的編碼各自獨立，相同的字元可能對應到不同語言的文字，也就產生亂碼的問題，為了讓全球語系統使用者可以彼此用電腦溝通，Unicode 把所有語言都統一到一套編碼裡。
+
+  另外，可以使用前面介紹過的跳脫字元「\」來列印 ASCII 字元或 Unicode 字元。
+
+  |---|---|
+  |`\ooo`| 列印以 8 進位表示的 ASCII 字元，其中ooo表示 3 個數字，各別從 0 到 7 的數字。|
+  |`\xoo`| 列印以 16 進位表示的 ASCII 字元，其中oo表示 2 個 16 進位的值，即 0 ~ 9 與 a ~ f 的值。|
+  |`\uoooo`| 列印一個 Unicode 字元，其中 oooo 表示 4 個 16 進位的值。|
+
+  ```python
+  # 8 進位
+  print(oct(65))  # A
+  print("\101")   # A
+
+  # 16 進位
+  print(hex(65))  # A
+  print("\x41")   # A
+
+  # Unicode
+  print(hex(26519))  # 林
+  print("\u6797")    # 林
+  ```
+
+### UTF-8 編碼
+
+* 範圍: 支援 Unicode 的所有字元。
+* 特點: 可變長度編碼（1 到 4 個位元組），與 ASCII 向後兼容。
+* 用途: 全球最常用的文字編碼方式，適用於網頁和跨平台應用。
+
+  UTF-8 是針對 Unicode 字符集的可變長度編碼方式，這是網際網路目前所遵循的編碼方式，UTF-8 使用 1 ~ 4 個 byte 表示一個字符，這種編碼方式會根據不同字符變化編碼長度。
+
+### ANSI 編碼
+
+* 範圍: 0–255（8位元）。
+* 特點: 是非標準的術語，通常指早期的 Windows 系統使用的區域性編碼，如 Windows-1252。
+* 用途: 在西方語系（如英語、法語）中表達額外的符號和語言。
+
+  ANSI(American National Standards Institute，美國國家標準協會) 是一種字符編碼方案，主要用於表示美國英語字符。但現在提到的 ANSI 編碼是指擴展的 ANSI 編碼，即 Windows 的 code page 編碼。對於不同的地區和語言，擴展的 ANSI 編碼使用不同的 code page，像繁體中文是 cp950（cp 分別是 code 程 page 的縮寫）。
+
+### Big5 編碼
+
+* 範圍: 兩個位元組（1 個字元佔 2 個位元組）。
+* 特點: 台灣和香港常用的繁體中文編碼，涵蓋常用的中文字。
+* 用途: 適用於繁體中文的早期系統和文件。
+
+### cp950 編碼
+
+* 範圍: 與 Big5 相似（雙位元組編碼）。
+* 特點: 微軟實現的 Big5 延伸版本，包含更多的繁體中文字。
+* 用途: Windows 系統中的繁體中文支援。
+
+### GB2312 編碼
+
+* 範圍: 不常見的編碼頁，專門設計用於某些特殊需求。
+* 特點: ISO 8859-15 的別名，涵蓋西歐語言並加入歐元符號。
+* 用途: 西歐語系的擴展支持。
+
+### 65001
+
+* 範圍: 等同於 UTF-8。
+* 特點: Windows 系統內部對 UTF-8 的代碼頁表示。
+* 用途: 在 Windows 中設置 UTF-8 作為預設編碼。
+
+
+------
 
 # 實作練習
 

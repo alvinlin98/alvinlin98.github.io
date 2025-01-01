@@ -192,10 +192,10 @@ print(str2)
 | index(x) | 傳回給定字串中第一次出現的子字串的索引。 | a = "hello world" <br> print(a.index("o"))  # 4 |
 | replace() | 傳回字串的副本，其中所有出現的子字串都替換為另一個子字串。 | a = "hello world" <br> print(a.replace("world", "Python"))  # hello Python |
 | split() | 從指定分隔符號拆分字串並傳回包含字串元素的清單物件。 | a = "1,2,a,b" <br> b = a.split(",")  # ['1', '2', 'a', 'b'] |
-| join() | 傳回一個字串，它是字串與指定可迭代的字串元素作為參數的串聯。 | a = [1, 2, 'a', 'b'] <br> print("-".join(b))  # 1-2-a-b |
-| strip() | 透過刪除前導字元和尾隨字元來傳回字串的副本。 | a = "  hello  " <br> print(a.strip())  # hello |
-| lstrip() | 透過刪除指定為參數的前導字元來傳回字串的副本。 | print(a.lstrip()) |
-| rstrip() | 透過刪除指定為參數的尾隨字元來傳回字串的副本。 | print(a.rstrip()) |
+| join() | 傳回一個字串，它是字串與指定可迭代的字串元素作為參數的串聯。 | a = [1, 2, 'a', 'b'] <br> print("-".join(a))  # 1-2-a-b |
+| strip() | 去除字串的左邊與右邊的空白字元。 | a = "  hello  " <br> print(a.strip())  # hello |
+| lstrip() | 去除字串左邊的空白字元。 | print(a.lstrip()) |
+| rstrip() | 去除字串右邊的空白字元。 | print(a.rstrip()) |
 
 ## 字元的編碼
 
@@ -341,7 +341,7 @@ text = "***Python\nis\tawesome!***"
 print(text)
 # 移除跳脫字元
 clean_nt = text.replace("\n", " ").replace("\t", " ")
-print(clean_nt)  # Python is awesome!
+print(clean_nt)  # ***Python is awesome!***
 
 # 前後3碼不要取
 clean_text = clean_nt[3:-3]

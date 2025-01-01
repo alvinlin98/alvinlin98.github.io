@@ -142,9 +142,9 @@ print("%3s  %2d   %3d   %3d   %3d" % ("王聰明", 3, 96, 96, 96))
 
 input() 函式用於接收使用者的輸入，語法為：
 
-input([提示字串])
+變數 = input([提示字串])
 
-在程式執行時，會顯示提示字串並等待使用者輸入。輸入的內容會以 字串 (string) 的形式返回。
+在程式執行時，會顯示提示字串並等待使用者輸入。輸入的內容會以 `字串 (string)` 的形式返回。
 
 * 輸入字串
 
@@ -162,9 +162,48 @@ age = int(input("請輸入你的年齡: "))  # 轉換為整數
 print("你的年齡是:", age)
 ```
 
+### 範例實作：計算成績總分
 
+林小宇剛考完期中考，他設計子小程式給老師輸入語文、英文、數學成績後會自動合計總分。
 
+```python
+name = input("請輸入學生姓名： ")
+chinese = int(input("請輸入語文成績： "))
+english = int(input("請輸入英文成績： "))
+math = int(input("請輸入數學成績： "))
+total = chinese + english + math
+print("學生「{0}」的總成續是：{1:3d}".format(name,total))
+```
 
+## 常用函數
+
+| 函數 | 說明 | 範例 |
+| --- | --- | --- |
+| eval() | 去掉參數最外側引號並執行餘下語句再返回其結果 | a = eval("1") <br> print(a) <br> b = eval("1+2") <br> print(b)| 
+
+```python
+print("'1+2'") # '1+2'
+eval('print("Hello")') # Hello
+
+english = input("請輸入英文成績： ")  # '98'，型別是字串 
+math = eval(input("請輸入數學成績：")) # 100，型別是數值
+```
+
+## Lab 1：溫度轉換
+
+請輸入帶有攝氏(C)或華氏(F)溫度符號的溫度值，例如輸入攝氏的 `30C` 則回傳華氏的 `86.0F`，若輸入格式不是上述的則回傳 `輸入格式錯誤`。
+
+```python
+TempStr = input("請輸入帶有符號的溫度值：")
+if TempStr[-1] in ['F','f']:
+    C = (eval(TempStr[:-1]) - 32) / 1.8
+    print("轉換後的溫度是{:.2f}C".format(C))
+elif TempStr[-1] in ['C','c']:
+    F = 1.8 * eval(TempStr[:-1]) + 32
+    print("轉換後的溫度是{:.2f}F".format(F))
+else:
+    print("輸入格式錯誤")
+```
 
 ----- 
 

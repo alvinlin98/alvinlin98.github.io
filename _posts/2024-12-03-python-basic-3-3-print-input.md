@@ -22,7 +22,7 @@ toc: true
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/python_basic/3-3-print-input.png" alt="">
 </figure> 
 
-## print 輸出
+# print 輸出
 
 print() 函式用於將資料輸出到螢幕，語法為：
 
@@ -42,7 +42,7 @@ print("這是第一行", end=" ")  # 不換行，將結尾字元改為空格
 print("這是同一行的內容")
 ```
 
-## 字串格式化
+# 字串格式化
 
 Python 提供多種方法進行格式化輸出，以下介紹三種常用的方式：
 
@@ -123,7 +123,7 @@ print("{0:5}的成績為{1:3}".format("林小宇",98))
 print("{:5}的成績為{:3}".format("林小宇",98))
 ```
 
-### 範例實作：格式化列印成續單
+## 範例實作：格式化列印成續單
 
 | 姓名   | 名次 | 國文 | 數學 | 英文 |
 |:-------|:----:|-----:|-----:|-----:|
@@ -138,7 +138,7 @@ print("%3s  %2d   %3d   %3d   %3d" % ("江士源", 2, 100, 98, 98))
 print("%3s  %2d   %3d   %3d   %3d" % ("王聰明", 3, 96, 96, 96))
 ```
 
-## input 輸入
+# input 輸入
 
 input() 函式用於接收使用者的輸入，語法為：
 
@@ -162,7 +162,7 @@ age = int(input("請輸入你的年齡: "))  # 轉換為整數
 print("你的年齡是:", age)
 ```
 
-### 範例實作：計算成績總分
+## 範例實作：計算成績總分
 
 林小宇剛考完期中考，他設計子小程式給老師輸入語文、英文、數學成績後會自動合計總分。
 
@@ -175,7 +175,7 @@ total = chinese + english + math
 print("學生「{0}」的總成續是：{1:3d}".format(name,total))
 ```
 
-## 常用函數
+# 常用函數
 
 | 函數 | 說明 | 範例 |
 | --- | --- | --- |
@@ -188,6 +188,8 @@ eval('print("Hello")') # Hello
 english = input("請輸入英文成績： ")  # '98'，型別是字串 
 math = eval(input("請輸入數學成績：")) # 100，型別是數值
 ```
+
+# 實作練習
 
 ## Lab 1：溫度轉換
 
@@ -209,3 +211,4 @@ else:
 
 # 隨堂測驗
 
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScP4Y8q1t_bIM6MMNkJodSj0VfNdKXlEVXJ52-DLg6SAOe1vg/viewform?embedded=true" width="640" height="1900" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>

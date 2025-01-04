@@ -32,9 +32,9 @@ toc: true
 
 
 ## 前置準備
-* [樹莓派安裝Raspbian作業系統（Windows篇）](/aiot/raspberry-raspbian-1-installation/)
-* [在樹莓派建立Python虛擬環境](/aiot/raspberry-pip3-create-env/)
-* [樹莓派安裝 Microsort 遠端桌面](/aiot/raspberry-raspbian-2-installation-xrdp/)
+* [樹莓派安裝Raspbian作業系統（Windows篇）](/raspberry/1-installation/)
+* [在樹莓派建立Python虛擬環境](/raspberry/pip3-create-env/)
+* [樹莓派安裝 Microsort 遠端桌面](/raspberry/2-installation-xrdp/)
 
 ## 教具準備
 

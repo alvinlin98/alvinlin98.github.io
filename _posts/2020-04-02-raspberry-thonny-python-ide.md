@@ -21,8 +21,8 @@ toc: true
 在安裝好樹莓派後，就內建了這個 Python IDE ，功能比起 Spyder 與 PyCharm 就相對功能簡易了些， 不過有程式編輯區、 Shell 視窗， 也有 Debug 模式，這點就非常實用了。接下來我們就來一探究竟吧！
 
 ## 前置準備
-* [樹莓派安裝Raspbian作業系統（Windows篇）](/aiot/raspberry-raspbian-1-installation/)
-* [在樹莓派建立Python虛擬環境](/aiot/raspberry-pip3-create-env/)
+* [樹莓派安裝Raspbian作業系統（Windows篇）](/raspberry/1-installation/)
+* [在樹莓派建立Python虛擬環境](/raspberry/pip3-create-env/)
 
 ## 如何使用 Thonny
 ### 變更介面

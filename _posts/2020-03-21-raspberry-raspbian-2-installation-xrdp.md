@@ -19,7 +19,7 @@ last_modified_at: 2020-03-24T21:00-00:00
 toc: true
 ---
 ## 前置準備
-* [樹莓派安裝Raspbian作業系統（Windows篇）](/aiot/raspberry-raspbian-1-installation/)
+* [樹莓派安裝Raspbian作業系統（Windows篇）](/raspberry/1-installation/)
 
 ## 安裝遠端桌面
 

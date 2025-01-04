@@ -23,7 +23,7 @@ toc: true
 </figure> 
 
 ## 前置準備
-* [樹莓派安裝Raspbian作業系統（Windows篇）](/aiot/raspberry-raspbian-1-installation/)
+* [樹莓派安裝Raspbian作業系統（Windows篇）](/raspberry/1-installation/)
 
 ## 檢查 Python 版本
 在安裝好樹莓派時，內建就有 Python 了，只是預設的版本是多少？路徑又在哪？我們來看看

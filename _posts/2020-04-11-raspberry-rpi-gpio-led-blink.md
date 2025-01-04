@@ -24,9 +24,9 @@ toc: true
 學程式語言第一個程式大概都是列印或顯示出 Hello World ，而學物聯網第一個實作大概都是學習 LED 控制，算是硬體編程的 Hello World，來試試吧！本學習是用 Python 語言開發，匯入 RPi.GPIO 模組來控制 LED 燈的亮燈與熄滅，做為學習樹莓派的入門篇，所以會多做說明。
 
 ## 前置準備
-* [樹莓派安裝Raspbian作業系統（Windows篇）](/aiot/raspberry-raspbian-1-installation/)
-* [在樹莓派建立Python虛擬環境](/aiot/raspberry-pip3-create-env/)
-* [樹莓派安裝 Microsort 遠端桌面](/aiot/raspberry-raspbian-2-installation-xrdp/)
+* [樹莓派安裝Raspbian作業系統（Windows篇）](/raspberry/1-installation/)
+* [在樹莓派建立Python虛擬環境](/raspberry/pip3-create-env/)
+* [樹莓派安裝 Microsort 遠端桌面](/raspberry/2-installation-xrdp/)
 
 ## 教具準備
 

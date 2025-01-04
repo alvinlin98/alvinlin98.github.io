@@ -18,8 +18,8 @@ last_modified_at: 2020-03-22T21:00-00:00
 toc: true
 ---
 ## 前置準備
-* [樹莓派安裝Raspbian作業系統（Windows篇）](/aiot/raspberry-raspbian-1-installation/)
-* [樹莓派安裝Jupyter Notebook](/aiot/raspberry-install-jupyter-1/)
+* [樹莓派安裝Raspbian作業系統（Windows篇）](/raspberry/1-installation/)
+* [樹莓派安裝Jupyter Notebook](/raspberry/install-jupyter-1/)
 
 ### 1. 產生設定檔
 ```bash

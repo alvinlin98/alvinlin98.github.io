@@ -34,6 +34,7 @@ toc: true
 
 <figure class="align-center">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/aiot_camp/20250111_led_dc_motor_1.png" alt="">
+  <figcaption><a href="https://www.tigergroup.com.tw/" title="Artec Robot的特色">圖片來源：Artec Robot的特色</a></figcaption>
 </figure> 
 
 

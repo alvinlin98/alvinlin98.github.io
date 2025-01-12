@@ -91,6 +91,12 @@ arduino nano33 iot:
         url: 
 
 
+aiot camp:
+  - title: 機器人體驗營
+    children:
+      - title: "artecrobo的LED與直流馬達"
+        url: /aiot camp/artecrobo-led-dc-motor/
+
 # Code Combat
 codecombat.python:
   - title: 教學準備

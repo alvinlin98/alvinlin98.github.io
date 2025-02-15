@@ -24,7 +24,7 @@ python_basic:
     children:
       - title: "2.1 變數(Variables)"
         url: /python_basic/2-variables/  
-  - title: 3. 資料型別(Data Type) 
+  - title: 3. 資料型別(Data Type)-上 
     children:
       - title: "3.1 數值"
         url: /python_basic/3-1-datatype-number/
@@ -34,6 +34,12 @@ python_basic:
         url: /python_basic/3-3-print-input/
       - title: "3.4 運算式"
         url: /python_basic/3-4-operators/
+  - title: 4. 判斷式 
+    children:
+      - title: "4.1 Python 文法(Syntax)"
+        url: /python_basic/4-1-python-syntax/
+      - title: "4.2 判斷式"
+        url: /python_basic/4-2-python-conditions/
 
 raspberry:
   - title: 1. 安裝
